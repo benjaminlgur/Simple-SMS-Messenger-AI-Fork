@@ -103,7 +103,6 @@
         android:id="@+id/thread_type_message"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/small_margin"
         android:layout_marginEnd="@dimen/small_margin"
         android:background="@android:color/transparent"
         android:gravity="center_vertical"
@@ -112,7 +111,7 @@
         android:minHeight="@dimen/normal_icon_size"
         app:layout_constraintBottom_toTopOf="@+id/attachment_picker_divider"
         app:layout_constraintEnd_toStartOf="@id/thread_select_sim_icon"
-        app:layout_constraintStart_toEndOf="@+id/thread_add_attachment" />
+        app:layout_constraintStart_toEndOf="@+id/ai_button" />
 
     <ImageView
         android:id="@+id/thread_select_sim_icon"
@@ -206,4 +205,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/ai_button"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="@+id/thread_send_message"
+        app:layout_constraintStart_toEndOf="@+id/thread_add_attachment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

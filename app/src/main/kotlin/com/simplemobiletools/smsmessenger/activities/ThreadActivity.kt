@@ -149,12 +149,15 @@ class ThreadActivity : SimpleActivity() {
 
                     setupThread()
                     setupScrollFab()
+                    setupAIButton()
                 }
             } else {
                 finish()
             }
         }
 
+
+        //thread_type_message.setText("Test Text")
         setupAttachmentPickerView()
         setupKeyboardListener()
         hideAttachmentPicker()
@@ -659,6 +662,12 @@ class ThreadActivity : SimpleActivity() {
         scroll_to_bottom_fab.applyColorFilter(textColor)
 
         setupScheduleSendUi()
+    }
+
+    private fun setupAIButton() {
+        ai_button.setOnClickListener() {
+            thread_type_message.setText("AI Text Holder")
+        }
     }
 
     private fun setupAttachmentSizes() {
